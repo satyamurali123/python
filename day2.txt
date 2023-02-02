@@ -1,0 +1,31 @@
+a,b,c=10,20,30
+print(b,c,a,sep='?')
+
+print('31','01','2023',sep='-')
+
+apple=100
+banana=200
+pineapple=300
+print(apple,end='*',)
+print(banana)
+
+print(apple,banana,pineapple)
+
+x,y,z,k=input("enter three values:").split('0')
+print("enter apple value",x)
+print("enter apple value",y)
+print("enter apple value",z)
+print("enter apple value",k)
+i=1
+
+while i < 11:
+   j=1
+   while j<i+1:
+       print("balaji",end=" ")
+       j+=1
+   print("\n")
+   i+=1
+for i in range(97,123,2):
+    for j in range(97,i+1):
+        print(chr(i),end=" ")
+    print("\n")

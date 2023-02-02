@@ -1,0 +1,102 @@
+#happy number
+num=int(input("enter a number"))
+x=num
+while x>=10:
+    total=0
+    while x>0:
+        digit=x%10
+        total=total+(digit*digit)
+        x=x//10
+    x=total
+if(x==1):
+    print(num,"is a happy number")
+else:
+    print(num,"is not a happy number")
+    
+#series
+val=int(input("enter a number"))
+
+x=0
+y=0
+for i in range(1,val+1):
+    if(i%2!=0):
+        x=x+7
+    else:
+        y=y+6
+if(val%2!=0):
+    print('{} term in the program is {}'.format(val,x-7))        
+else:
+    print('{} term in the program is {}'.format(val,y-6)) 
+"""--------------------------------------------------------------------------"""    
+#string methods
+str1="australia"
+print(str1*10,end=" ")
+str2=input("enter a string")
+str1+=str2
+print(str1)
+
+str1="australia"
+d=len(str1)
+for i in range(d):
+    print("text[",i,"] =",str1[i])
+    
+    
+#upper case
+str1="james bond"
+print(str1.title())
+
+#swap case
+print(str2.swapcase())
+#split case
+
+str2='india, is, great'
+print(str2.split())
+#join case
+
+str2='india', 'is', 'great'
+print('-'.join(str2))
+#enumerate methods
+str1='donkey monkey'
+print(list(enumerate(str1)))
+#zfill function
+str1='66'
+print(str1.zfill(4))
+# import statements
+import string
+print((string.ascii_letters))
+
+ch='g'
+print('a' <=ch <='z')
+str1= "hello"
+print(dir(str1))
+"""------------------------------------------------------------------------------------------"""
+# functions
+import re
+str1="she sells sea shells at sea shore"
+p1="shells"
+if re.search(p1,str1):
+    print("match found")
+else:
+    print(p1,"not present in string")
+p1="sea"
+rep='ocean'
+ns=re.sub(p1,rep,str1,1)
+print(ns)
+
+import re
+p=r"[aeiou]"
+if re.search(p,"clue"):
+    print("mingey bro")
+#anagram
+    
+str1=list(input("enter a string"))
+str2=list(input("enter a string"))
+s=str1.sort()
+d=str2.sort()
+if len(str1)==len(str2):
+    
+    if s==d:
+        
+        print("given string is a anagram")
+    else:
+         print("given string is not a anagram")

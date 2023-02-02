@@ -1,0 +1,93 @@
+#list
+list1=[10,290,'a','b','c',"chaitanya",[2,4,5],33.4,40,55,66,11,22,33,55,66]
+print(len(list1))
+print(list1)
+print(list1[6][0])
+print(list1[3])	
+print(list1[1:8:2])
+
+del list1[2:4]
+print(list1)
+list2=["uma","chaitu","abhi"]
+print(list2)
+
+repeat="chaitu"*11
+print(repeat)"""
+#sum of n numbers
+
+
+"""n=int(input("enter"))
+i=1
+s=0
+while i<n+1:
+    
+    s=s+i
+    i+=1
+    print(s,end=" ")
+print("\n")
+print(s)  
+#sum in lists
+
+list3=[1,3,4,5,6,7,8,9]
+print(sum(list3)) 
+
+num=str(input())
+print(int(num,17))
+print(bin,90)"""
+
+#sorting
+list2=[1,3,4,5]
+list3=[3,7,2,55,6,7,111,22,33,3,3]
+"""print(sorted(list3))
+#any function
+print(any(list3))
+#append function
+list2.append(list3)
+print(list2)
+#count function
+print(list3.count(3))
+#insert
+(list2.insert(5,11))
+print(list2)
+(list2.reverse())
+print(list2)
+# armstrong number
+
+number=int(input("enter a number"))
+result=0
+
+z=number
+while z>0:
+    digit=z%10
+    result+=digit**2
+    z=z//10
+    
+if result==number:
+    print(number,"is a armstrong")
+    
+else:
+    print(number,"is not a armstrong")
+    
+    
+#cubes
+list1=[]
+n=int(input("enter a number"))
+for i in range(n+1):
+    list1.append(i**3)
+print(list1)
+#ANOTHER METHOD
+print([i**3 for i in range(11)])
+#difference between summatiton of odd and even in a number
+n=int(input("enter a number"))
+total1=0
+total=0
+while n>0:
+    digit=n%10
+    if digit%2==0:
+        total1=total1+digit
+    else:
+        total=total+digit
+    n=n//10           
+print(total1-total)
+    
+
